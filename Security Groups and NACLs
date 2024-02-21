@@ -1,0 +1,21 @@
+
+AWS (Amazon Web Services) implements robust security measures to safeguard resources and data within its cloud infrastructure. Among these measures, Security Groups and Network Access Control Lists (NACLs) play pivotal roles in managing network traffic effectively. Let's delve into the functionalities of each:
+
+Security Groups:
+
+Functioning as virtual firewalls at the instance level, Security Groups regulate both inbound and outbound traffic for Amazon EC2 instances.
+Each EC2 instance can be linked with one or more security groups, each comprising distinct inbound and outbound rules.
+Inbound rules specify permissible traffic directed towards the EC2 instance, while outbound rules dictate traffic exiting the instance.
+Configuration options for Security Groups include IP addresses, CIDR blocks, security group IDs, or DNS names to define traffic sources or destinations.
+Operating at the instance level, Security Groups assess rules before permitting traffic to the instance.
+They are stateful, facilitating automatic allowance of corresponding outbound traffic if inbound traffic is permitted, and vice versa.
+Modifications to Security Group rules are instantly effective.
+Network Access Control Lists (NACLs):
+
+NACLs offer an additional layer of security operating at the subnet level, functioning as stateless traffic filters for both inbound and outbound traffic at the subnet boundary.
+Unlike Security Groups, NACLs are linked with subnets, with each subnet accommodating only one NACL. However, multiple subnets can share a single NACL.
+Structured as a numbered list of rules, NACLs prioritize evaluation from lowest to highest rule numbers.
+Each rule encompasses specifications such as rule number, protocol, action (allow or deny), source or destination IP address range, port range, and ICMP type.
+NACL rules are customizable to allow or deny specific traffic types based on defined criteria.
+Unlike Security Groups, NACLs are stateless, necessitating explicit allowance of outbound traffic corresponding to permitted inbound traffic via separate outbound rules.
+Changes to NACL rules may require some time for propagation across all resources linked with the associated subnet.
