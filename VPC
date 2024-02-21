@@ -1,0 +1,48 @@
+Virtual Private Cloud (VPC):
+
+Imagine needing a secure, isolated space in the cloud to run your applications and safeguard your data. This is where a Virtual Private Cloud (VPC) comes in.
+
+A VPC is akin to having your own private slice of the internet within the broader cloud infrastructure. It allows you to create and manage various resources, such as servers, databases, and storage, within a controlled and secure environment.
+
+Key Components of VPC:
+
+Subnets:
+
+Segments of IP addresses within a VPC, organized to manage resources efficiently.
+Each subnet resides in a single Availability Zone, ensuring high availability.
+IP Addressing:
+
+Assigns IPv4 and IPv6 addresses to VPCs and subnets.
+Supports bringing public IPv4 and IPv6 addresses to AWS for allocation to resources.
+Network Access Control List (NACL):
+
+Acts as a stateless firewall, controlling inbound and outbound traffic at the subnet level.
+Provides an additional layer of security for the VPC, allowing or denying traffic based on defined rules.
+Security Group:
+
+Functions as a virtual firewall at the instance level, managing inbound and outbound traffic.
+Offers granular control over traffic by defining rules based on protocols, ports, and IP addresses.
+
+Routing:
+Utilizes route tables to direct network traffic from subnets or gateways.
+
+Gateways and Endpoints:
+Establishes connections to external networks (e.g., internet gateway) or AWS services (e.g., VPC endpoint) privately.
+Peering Connections:
+
+Facilitates traffic routing between resources in different VPCs.
+
+Traffic Mirroring:
+Duplicates network traffic for monitoring and security analysis purposes.
+
+Transit Gateways:
+Acts as a central hub for routing traffic between VPCs, VPN connections, and AWS Direct Connect connections.
+
+VPC Flow Logs:
+Captures IP traffic information for monitoring and troubleshooting purposes.
+
+VPN Connections:
+Establishes secure connections between VPCs and on-premises networks using AWS VPN.
+
+Setting Up a VPC with Private Subnets and NAT:
+To create a VPC with servers in private subnets and NAT (Network Address Translation), follow this guide: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html
