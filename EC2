@@ -1,0 +1,50 @@
+Amazon Elastic Compute Cloud (Amazon EC2) stands as a pivotal web service offering secure, resizable compute capacity within the cloud infrastructure. Its significance lies in the provision of reliable, scalable computing resources on demand, coupled with a commitment to a 99.99% availability SLA. Notably, EC2 ensures secure compute environments through the integration of robust security measures within its foundation, notably employing the AWS Nitro System. Moreover, it enables users to optimize both performance and cost-effectiveness through flexible options like AWS Graviton-based instances, Amazon EC2 Spot instances, and AWS Savings Plans.
+
+Use Cases of EC2:
+- Provisioning secure, reliable, high-performance, and cost-effective compute infrastructure to meet diverse business demands.
+- Empowering faster and cost-efficient execution of High-Performance Computing (HPC) applications by accessing on-demand infrastructure and capacity.
+- Facilitating rapid environment setup and dynamic capacity scaling while benefiting from AWS's pay-as-you-go pricing model.
+- Providing a comprehensive range of compute, networking (up to 400 Gbps), and storage services tailored to optimize price performance for Machine Learning (ML) projects.
+
+EC2 Instance Types:
+For detailed and updated information, it's recommended to refer to the corresponding AWS page.
+- General Purpose: Offering a balanced mix of compute, memory, and network resources, suitable for various applications like web servers, small databases, and development environments.
+- Compute Optimized: Excelling in high-performance processing tasks such as batch processing, scientific modeling, and gaming servers due to a higher compute-to-memory ratio.
+- Memory Optimized: Tailored for memory-intensive workloads including in-memory databases, real-time big data analytics, and high-performance computing.
+- Storage Optimized: Optimized for applications requiring high sequential read/write access to large datasets, ideal for data warehousing, log processing, and distributed file systems.
+- Accelerated Computing: Equipped with accelerators like GPUs, FPGAs, or custom ASICs to offload computationally intensive tasks from the main CPU, enabling faster processing for specific workloads.
+
+Instance Families:
+- C: Compute
+- D: Dense storage
+- F: FPGA
+- G: GPU
+- Hpc: High-performance computing
+- I: I/O
+- Inf: AWS Inferentia
+- M: Most scenarios
+- P: GPU
+- R: Random access memory
+- T: Turbo
+- Trn: AWS Tranium
+- U: Ultra-high memory
+- VT: Video transcoding
+- X: Extra-large memory
+
+Additional Capabilities:
+- a: AMD processors
+- g: AWS Graviton processors
+- i: Intel processors
+- d: Instance store volumes
+- n: Network and EBS optimized
+- e: Extra storage or memory
+- z: High performance
+
+EC2 Instance Basics:
+Covering the concept of virtual servers and instances, key components including AMIs, instance types, and instance states, as well as distinguishing between On-Demand, Reserved, and Spot instances.
+
+Launching an EC2 Instance:
+Providing a step-by-step guide through the AWS Management Console, including configuring instance details such as type, network settings, and storage options, along with securing instances using security groups and key pairs.
+
+Managing EC2 Instances:
+Detailing actions like starting, stopping, and terminating instances, monitoring performance and utilization, and basic troubleshooting techniques including accessing instances via SSH (Secure Shell).
